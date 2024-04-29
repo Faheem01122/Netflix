@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(Assets/Image/bg1.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+.header {
+  width: 75vw;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.sign-in {
+  color: white;
+  background-color: red;
+  padding: 6px 15px;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-content {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px 0;
+  flex: 2;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.main-content> :nth-child(1) {
+  font-size: xxx-large;
+  font-weight: 900;
+}
+
+.main-content> :nth-child(2),
+.main-content> :nth-child(3) {
+  font-size: larger;
+  font-weight: 400;
+}
+
+.main-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.main-btn input {
+  padding: 14px;
+  width: 345px;
+  border-radius: 4px;
+  border: 1px solid #ffffff69;
+  background-color: #00000085;
+}
+
+.main-btn input[type="text"] {
+  color: white;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.main-btn button {
+  font-size: x-large;
+  color: white;
+  background-color: red;
+  padding: 10px 23px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: navajowhite;
+  cursor: pointer;
+}
+
+.main-btn i {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.seperator {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background-color: #232323;
+}
+
+.second {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-1 {
+  color: white;
+}
+
+.sec-1> :nth-child(1) {
+  font-size: xxx-large;
+  font-weight: 900;
+}
+
+.sec-1> :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.sec-2 {
+  position: relative;
+  top: 0;
+}
+
+.sec-2 img {
+  position: relative;
+  z-index: 10;
+  width: 550px;
+}
+
+.sec-2 video {
+  position: absolute;
+  width: 399px;
+  right: 14%;
+  top: 86px;
+}
+
+.sec-3-download>img {
+  width: 60px;
+  height: 80px;
+  position: relative;
+}
+
+.sec-3-download {
+  border: 1px solid #6c6c6b;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  color: white;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  bottom: 40px;
+  z-index: 10;
+  background: black;
+}
+
+.sec-3-download>span {
+  font-size: small;
+  font-weight: 500;
+}
+
+.sec-3-download>span div:nth-child(2) {
+  color: blue;
+}
+
+.download-gif {
+  flex: 1;
+  text-align: right;
+}
+
+.download-gif img {
+  width: 25px;
+  flex: 2;
+}
+
+.forth {
+  width: 63vw;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: auto;
+  gap: 20px;
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.faq-item {
+  display: flex;
+  width: 70vw;
+  margin: auto;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  font-size: 24px;
+  padding: 22px 17px;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  background-color: #414141;
+  transition: all .5s ease-out;
+}
+
+.faq-item img {
+  filter: invert(1);
+  width: 30px;
+}
+
+.faq-subs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  font-size: larger;
+  font-weight: 400;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 14px;
+  margin: auto;
+  width: 70vw;
+  height: 400px;
+  justify-content: center;
+}
+
+.footer-start {
+  text-decoration: underline;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-grid ul li,
+.footer-grid ul li a {
+  list-style: none;
+  color: rgb(255 255 255 / 70%);
+  padding: 6px 0px;
+}
+
+.footer-btn span {
+  border: 1px solid rgb(255 255 255 / 70%);
+  padding: 3px 10px;
+  display: flex;
+  color: white;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  cursor: pointer;
+}
